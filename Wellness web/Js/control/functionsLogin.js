@@ -19,7 +19,7 @@ const firstRegisterBtn = document.getElementById("firstRegisterBtn");
 
 if(firstRegisterBtn != null){
     firstRegisterBtn.addEventListener("click", function(){
-        window.location.href = "./Register.html";
+        window.location.href = "Register.html";
     });
 }
 
@@ -49,7 +49,7 @@ function validateUser(){
     });
 
     if(found){
-        alert("se encontro el usuario");
+        window.location.href = "Home.html";
     }else{
         alert("datos incorrectos");
     }
@@ -76,7 +76,7 @@ function validateData(name,email,password){
 
     if(name == "" || email == "" || password == ""){
         validate = false;
-        alert("falta info");
+        alert("Por favor rellene todos los parametros");
     }
     else if(!expresion.test(email)){
         validate = false;
@@ -99,11 +99,13 @@ function addUser(){
 
         database.ref().child("Users").child(id).set(user);
 
-        alert("info correcta")
+        alert("Se ha añadido el usuario");
 
         nameRegister.value = "";
         emailRegister.value = "";
         passwordRegister.value = "";
+
+        window.location.href = "Login.html";
     }
 }
 
