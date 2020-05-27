@@ -8,49 +8,31 @@
     <title>Wellness</title>
 </head>
 <body>
-    <header>
-        <section id="logo">
-            <img src="./Data/wellness.png" alt="logo Wellness.png">
-
-        </section>
+    <div id="description">
+        <h1>Wellness</h1>
+        <h2>Your mind matters</h2>
+        <p>We know that this is a difficult time and for this reason, we want to be by your side and support you while everything retunrs to normal. 
+            Your mind matters an your body also, keeping them healthy is a gola that we can achieve together. Start now and discover a new world of wellness.</p>
+        <button id="firstRegisterBtn">Register for free!</button>
+    </div>
+    <div class="nav">
         <nav>
             <ul>
-                <li> <a href="./Login.html">Log in</a> </li>
-                <li>|</li>
                 <li>Contact us</li>
+                <li> <a href="./Login.html">Login</a> </li>
             </ul>
         </nav>
+        <img src="./Data/float.png" alt=".png">
+    </div>
 
-    </header>
-    <main id="splash">
-        <section id="img">
-
-            <img src="./Data/women_1.png" alt="women.png">
-            
-
-        </section>
-        <section id="description">
-
-            <div id="title">
-                <h1>wellness</h1>
-                <h2>Your mind matters</h2>
-            </div>
-
-            <div>
-                <p>We know that this is a difficult time and for this reason,
-                we want to be by your side and support you while everything
-                returns to normal. Your mind matters and your body also,
-                keeping them healthy is a goal that we can achieve together.
-                Start now and discover a new world of wellness!
-                </p>
-                 <button>Register for free!</button>
-
-            </div>
-            
-
-        </section>
-
-    </main>
-    
 </body>
+
+<!----------Firebase---------->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-database.js"></script>
+
+<!----------Scripts---------->
+<script type="text/javascript" src="./Js/model/User.js"></script>
+<script type="text/javascript" src="./Js/control/functionsLogin.js"></script>
+
 </html>

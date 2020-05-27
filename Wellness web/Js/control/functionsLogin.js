@@ -13,6 +13,17 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 const database = firebase.database();
 
+/**********splash Logic**********/
+
+const firstRegisterBtn = document.getElementById("firstRegisterBtn");
+
+if(firstRegisterBtn != null){
+    firstRegisterBtn.addEventListener("click", function(){
+        window.location.href = "./Register.html";
+    });
+}
+
+
 /**********Login Logic**********/
 
 const emailLogin = document.getElementById("emailLogin");

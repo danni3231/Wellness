@@ -7,219 +7,138 @@ html{
 
 body{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     height: 100%;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-input{
-    background-color: white;
-    color: #1F5EBD;
+a{
+    text-decoration: none;
+}
+
+button{
+    width: 458px;
+    height: 76px;
+
+    background: #FFD23F;
+    border-radius: 10px;
+
     font-family: Montserrat;
     font-style: normal;
     font-weight: bold;
-
-    box-shadow: 0px 4px 20px rgba(0, 27, 68, 0.5);
+    font-size: 22px;
+    line-height: 27px;
+    color: #642A80;
     border: none;
-    border-radius: 10px;
+    box-shadow: 0px 0px 20px #FFD23F;
 
-    padding: 0px 0px 0px 30px;
-}
-
-input:focus{
     outline:none !important;
     outline-width: 0 !important;
 }
 
-::placeholder{
-    color: rgba(31, 94, 189, 0.6);
-}
-
-button{
-    background-color: white;
-    color: #1F5EBD;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: bold;
-
-    box-shadow: 0px 4px 20px rgba(0, 27, 68, 0.5);
-    border: none;
-}
-
 button:hover{
-    background-color: #F2F4FF;
+    background-color:rgb(253, 202, 34);
+
+    outline:none !important;
+    outline-width: 0 !important;
 }
 
 button:active{
-    background-color: #4BD6F2;
+    background-color:#FFD23F;
+    
+    outline:none !important;
+    outline-width: 0 !important;
 }
 
-a{
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    color: white;
-}
+/* splash */
 
-
-/* header */
-
-header{
-    display: flex;
-    width: 100%;
-    height: 100px;
-}
-header #logo{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
-
-header #logo img{
-    width: 155px;
-    margin-left: 80px;
-}
-
-header nav{   
-    width: 60%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    background-color: #1F5EBD;
-}
-
-header nav ul{
-    padding-right: 50px;
-    display: flex;
-    color: white;
-    list-style:none
-}
-header nav ul li{
-    padding-left: 20px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 22px;
-}
-
-header nav ul li a:visited{
-    color: white;
-}
-
-/* main splash*/
-
-#splash{
-    display: flex;
-    width: 100%;
+#description{
+    width: 1160px;
     height: 100%;
+    background: white;
 }
 
-#splash #img{
-    width: 40%;
-    display: flex;
-    align-items: center;
-    background-color: white;
-}
-
-#splash #img img{
-    height: 700px;
-    align-self: flex-end;
-}
-
-#splash #description{
-    width: 60%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #1F5EBD;
-    color: white;
-}
-
-#splash h1{
+#description h1{
     font-family: Montserrat;
     font-style: normal;
     font-weight: 900;
-    font-size: 108px;
+    font-size: 96px;
+    line-height: 117px;
+    margin-left: 148px;
+    margin-top: 232px;
     margin-bottom: 0;
-    margin-top: 75px;
+
+    color: #642A80;
 }
 
-#splash h2{
+#description h2{
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
     font-size: 36px;
-    margin: -15px 0px 0px 5px;
-    
+    line-height: 44px;
+    margin-top: -14px;
+    margin-left: 148px;
+    margin-bottom: 0;
+
+    color: #642A80;
 }
 
-#splash p{
-    width: 500px;
+#description p{
+    width: 457px;
+    height: 216px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    margin: 71px 0px 0px 0px;
-}
-#splash button{
-    width: 300px;
-    height: 56px;
-    font-size: 18px;
-    margin-top: 95px;
+    font-size: 22px;
+    line-height: 27px;
+    margin-left: 148px;
+    margin-top: 77px;
+    margin-bottom: 0;
+
+    color: #642A80;
 }
 
-/* main logIn*/
+#description button{
+    margin-left: 148px;
+    margin-top: 77px;
+}
 
-#logIn{
-    width: 100%;
+.nav{
+    width: 760px;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #1F5EBD;
+    background: #642A80;
 }
 
-.form{
-    width: 500px;
+.nav nav{
     display: flex;
-    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    justify-content: flex-end;
+    margin-top: 55px;
+
 }
 
-.form h1{
-    font-size: 70px;
-    margin-bottom: 50px;
-    color: white;
-    text-shadow: 0px 4px 20px rgba(0, 27, 68, 0.5);
-}
-
-.form p{
-    color: white;
-}
-
-.form button{
-    width: 300px;
-    height: 56px;
-    font-size: 18px;
-    margin-top: 95px;
-}
-
-.form input{
-    width: 95%;
-    height: 56px;
-    font-size: 15px;
-    margin: 20px 0px 20px 0px;
-}
-
-#register{
-    width: 100%;
-    height: 100%;
+.nav nav ul{
+    padding-right: 50px;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    background-color: #1F5EBD;
+    color: #FFD23F;
+    list-style:none 
+}
+
+.nav nav ul li{
+    padding-left: 60px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.nav a:visited{
+    color: #FFD23F;
+}
+
+.nav img{
+    margin-left: -400px;
 }
