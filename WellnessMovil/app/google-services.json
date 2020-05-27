@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "342085213102",
+    "firebase_url": "https://wellness-jdr3011.firebaseio.com",
+    "project_id": "wellness-jdr3011",
+    "storage_bucket": "wellness-jdr3011.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342085213102:android:567200c803839ad726c63f",
+        "android_client_info": {
+          "package_name": "com.parrotgames.wellness"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342085213102-5120ouifru6mf6sj1ouudttfgpb1git0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.parrotgames.wellness",
+            "certificate_hash": "88d4c22485d6f00140cc986596294d40c68cf471"
+          }
+        },
+        {
+          "client_id": "342085213102-rulcc2o651k05dpol51lv5jh0mfuij6t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf1ipIhIm55YOTtjpz12MdTVpZheVARUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342085213102-rulcc2o651k05dpol51lv5jh0mfuij6t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
